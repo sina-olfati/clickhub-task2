@@ -1,0 +1,8 @@
+.body-container{
+    height: 100vh;
+    width: 100vw;
+    right: 0;
+    /* border: solid 1px; */
+    background-color: yellowgreen;
+    text-align: right;
+}
