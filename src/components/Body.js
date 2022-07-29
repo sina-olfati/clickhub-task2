@@ -13,6 +13,12 @@ const Body = () => {
   // const numItems = state1.items
   const dispatch = useDispatch();
 
+
+  const handleAdd = () => {
+    dispatch(addPage("one"))
+    active = setActive(!active)
+  }
+
   return (
     <div className='body-container'>
       <div className="body-sidebar">
@@ -25,7 +31,7 @@ const Body = () => {
       </div>
 
     <div className={active ? 'body-slider active-slider' : 'body-slider'}>
-      <a href="#" onClick={() => dispatch(addPage("one"))}>
+      <a href="#" onClick={() => handleAdd()}>
       تعریف سرفصفل
       </a>
     </div>
