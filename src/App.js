@@ -4,7 +4,6 @@ import './App.css';
 import { Provider } from 'react-redux';
 import store from './redux/store';
 
-import Menu from './components/Menu';
 import Body from './components/Body'
 
 function App() {

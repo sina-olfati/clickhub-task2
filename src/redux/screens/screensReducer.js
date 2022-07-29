@@ -1,7 +1,7 @@
 const initialState = {
     counter: 0,
     choosed: null,
-    items: []
+    items: [],
 }
 
 const reducer = (state=initialState, action) => {
@@ -10,7 +10,7 @@ const reducer = (state=initialState, action) => {
             return {
                 ...state,
                 counter: state.counter + 1,
-                items: items.push(counter),
+                items: state.items.concat(state.counter),
             }
         case "CHOOSE_PAGE":
             return {

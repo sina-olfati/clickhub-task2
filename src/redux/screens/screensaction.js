@@ -1,5 +1,5 @@
-const addPage = () => {
-    return {type: "ADD_PAGE"}
+const addPage = (value) => {
+    return {type: "ADD_PAGE", payload: value}
 }
 
 const choosePage = (value) => {

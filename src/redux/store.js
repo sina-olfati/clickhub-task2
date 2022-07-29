@@ -1,7 +1,9 @@
-import { createStore } from "redux";
+import { createStore, applyMiddleware } from "redux";
 
 import reducer from "./screens/screensReducer";
 
-const store = createStore(reducer)
+import logger from "redux-logger";
+
+const store = createStore(reducer, applyMiddleware(logger))
 
 export default store
